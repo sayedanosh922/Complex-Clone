@@ -7,15 +7,27 @@ body, html {
     margin: 0;
     padding: 0;
 }
-/* logo located in header section */
+/* display flex for header to align both sections */
+#header-section {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    border: 2px solid blue;
+}
+/* Complex logo located in header section */
 .logo {
     margin-top: 0.5rem;
     position: relative;
+    border: 2px solid blue;
+    flex-basis: 3vw;
 }
 .logo p {
     position: absolute;
-    left: 5.7rem;
+    font-size: 0.9em;
     bottom: 0.5rem;
+    left: 5.8rem;
+    
+  
   
 }
 .logo a h1, p {
@@ -29,7 +41,7 @@ body, html {
 /* navigation section which contains shop bag, search bar and navigation */
 
 .nav-search-shop  img {
-    width: 3.5vw;
+    width: 5vw;
     height: auto;
 }
 .navigation {
@@ -39,13 +51,14 @@ body, html {
     display: block;
 }
 #icons {
+    margin-top: 0.5rem;
     display: flex;
     flex-direction: row;
-    border: 2px solid blue;
     align-items: center;
     gap: 1rem;
     justify-content: flex-end;
     margin-right: 1em;
 
+    border: 2px solid blue;
 }
 
