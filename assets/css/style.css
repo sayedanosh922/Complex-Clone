@@ -27,12 +27,7 @@ body, html {
     text-decoration: none;
 }
 /* navigation section which contains shop bag, search bar and navigation */
-.nav-search-shop {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
 
-}
 .nav-search-shop  img {
     width: 3.5vw;
     height: auto;
@@ -42,5 +37,15 @@ body, html {
 }
 #mobile-nav:checked~nav {
     display: block;
+}
+#icons {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid blue;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-right: 1em;
+
 }
 
