@@ -10,11 +10,13 @@ body, html {
 /* logo located in header section */
 .logo {
     margin-top: 0.5rem;
+    position: relative;
 }
 .logo p {
-    position: relative;
-    left: 16vw;
-    bottom: 4.5vh;
+    position: absolute;
+    left: 5.7rem;
+    bottom: 0.5rem;
+  
 }
 .logo a h1, p {
     font-weight: 900;
@@ -23,4 +25,9 @@ body, html {
 }
 .logo a {
     text-decoration: none;
+}
+/* navigation section which contains shop bag, search bar and navigation */
+.nav-search-shop  img {
+    width: 3.5vw;
+    height: auto;
 }
