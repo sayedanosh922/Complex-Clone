@@ -2,12 +2,14 @@
     margin: 0;
     padding: 0;
 }
+/* body and html set to 0 */
 body, html {
     margin: 0;
     padding: 0;
 }
+/* logo located in header section */
 .logo {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 .logo p {
     position: relative;
