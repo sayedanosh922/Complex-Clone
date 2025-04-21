@@ -104,13 +104,16 @@ body, html {
     #icons {
         margin-right: 3rem;
         margin-top: 1rem;
-        width: 15vw;
-        gap: 7.5rem;
+        width: 20vw;
+        gap: 2rem;
+    }
+    #search {
+        margin-right: 3rem;
     }
     .icons-p {
         display: block;
        position: absolute;
-       margin-right: 6.5rem;
+       right: 11.5rem;
     }
     .nav {
         display: none;
