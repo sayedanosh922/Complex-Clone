@@ -101,10 +101,8 @@ body, html {
   .discover-button, .shop-button {
     width: 100%; 
   }
-  .discover, .shop, .complexicon {
-    font-size: 0.1rem;
-    opacity: 0;
-    pointer-events: auto; 
+  #hidden-element {
+    display: none;
     
   }
 
@@ -137,12 +135,12 @@ body, html {
     }
     /* search bar icon */
     #search {
-        margin-right: 3.5rem;
+        margin-right: 3.8rem;
     }
     .icons-p {
-        display: block;
+       display: block;
        position: absolute;
-       right: 18.5rem;
+       right: 11.2rem;
     }
     /* label for checkbox */
     .nav {
@@ -157,8 +155,44 @@ body, html {
         display: none;
     }
     /* h1 hovered , show navigation horizontally */
-     .h2-discover:hover~nav {
+     .discover:hover + nav {
       display: block;
+    }
+    /* h2s siblins of nav elements moved for hover effect */
+    #hidden-element {
+        display: flex;
+        flex-direction: row;
+        font-size: 1rem;
+        position: relative;
+        gap: 2rem;
+        
+       
+    
+    }
+    .hide1, .hide2, .hide3 {
+        font-size: 1rem;
+
+    }
+    .hide1 {
+        position: absolute;
+        right: 66.5rem;
+        top: -0.3rem;
+    }
+    .hide2 {
+        position: absolute;
+        right: 62.7rem;
+        top: -0.2rem;
+    }
+    .hide3 {
+        position: absolute;
+        right: 54rem;
+        top: -0.2rem;
+    }
+      
+       
+       
+       
+        
     }
 
 }
