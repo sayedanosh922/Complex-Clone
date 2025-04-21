@@ -67,7 +67,6 @@ body, html {
     justify-content: flex-end;
     margin-right: 1em;
     margin-top: 1.2rem;
-
     border: 2px solid blue;
 }
 #mobile-nav {
@@ -102,8 +101,11 @@ body, html {
   .discover-button, .shop-button {
     width: 100%; 
   }
-  .second-display-pages {
-    display: none;
+  .discover, .shop, .complexicon {
+    font-size: 0.1rem;
+    opacity: 0;
+    pointer-events: auto; 
+    
   }
 
 
@@ -130,17 +132,17 @@ body, html {
     #icons {
         margin-right: 3rem;
         margin-top: 1rem;
-        width: 20vw;
+        width: 30vw;
         gap: 2rem;
     }
     /* search bar icon */
     #search {
-        margin-right: 3rem;
+        margin-right: 3.5rem;
     }
     .icons-p {
         display: block;
        position: absolute;
-       right: 10.5rem;
+       right: 18.5rem;
     }
     /* label for checkbox */
     .nav {
@@ -155,13 +157,8 @@ body, html {
         display: none;
     }
     /* h1 hovered , show navigation horizontally */
-    .h2-discover:hover~nav {
-        display: block;
-    }
-    .navigation {
-       position: absolute;
-       top: 4rem;
-       right: 20rem;
+     .h2-discover:hover~nav {
+      display: block;
     }
 
 }
