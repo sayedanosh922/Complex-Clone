@@ -22,15 +22,22 @@ body, html {
   
    
 }
+.logo h1 {
+    font-size: 2rem;
+    font-family: fantasy;
+}
 .logo p {
     position: relative;
-    font-size: 0.9em;
-    bottom: 1.5rem;
-    left: 5.8rem;
+    font-size: 1.3em;
+    bottom: 2.3rem;
+    left: 7rem;
+    font-weight: 900;
 }
 .logo a h1, p {
-    font-weight: 900;
+    font-weight: 100;
     color: #000000;
+    
+    
    
 }
 .logo a {
@@ -39,8 +46,8 @@ body, html {
 /* navigation section which contains shop bag, search bar and navigation */
 
 .nav-search-shop  img {
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 .navigation {
     display: none;
@@ -65,7 +72,10 @@ body, html {
 .mobile-navigation {
     position: absolute;
     top: 4rem;
-
+}
+/* nav section that when hovered display relevant nav pages */
+#display-pages h2{
+    font-size: 1rem;
 }
 
 
