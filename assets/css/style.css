@@ -19,9 +19,19 @@ body, html {
     margin-top: 0.5rem;
     position: relative;
     border: 2px solid blue;
-  
    
 }
+.logo > div {
+    display: none;
+   
+    
+}
+  /* nav section that when hovered display relevant nav pages */
+
+
+
+   
+
 .logo h1 {
     font-size: 2rem;
     font-family: fantasy;
@@ -36,8 +46,6 @@ body, html {
 .logo a h1, p {
     font-weight: 100;
     color: #000000;
-    
-    
    
 }
 .logo a {
@@ -46,8 +54,8 @@ body, html {
 /* navigation section which contains shop bag, search bar and navigation */
 
 .nav-search-shop  img {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.9rem;
+    height: 1.9rem;
 }
 .navigation {
     display: none;
@@ -73,9 +81,27 @@ body, html {
     position: absolute;
     top: 4rem;
 }
-/* nav section that when hovered display relevant nav pages */
-#display-pages h2{
-    font-size: 1rem;
+@media (min-width: 1024px) {
+    .logo {
+        margin-top: 0.5rem;
+        position: relative;
+        border: 2px solid blue;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .logo > div {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+    .nav {
+        display: none;
+    }
+      /* nav section that when hovered display relevant nav pages */
+    #display-pages h2{
+        font-size: 1rem;
+    }
 }
-
-
