@@ -102,7 +102,7 @@ body, html {
   .discover-button, .shop-button {
     width: 100%; 
   }
-  #hidden-element {
+  .hide {
     display: none;
     
   }
@@ -161,7 +161,7 @@ body, html {
     }
     /* h2s siblins of nav elements moved for hover effect */
     .hide {
-       
+       display: block;
         
        
     
@@ -184,6 +184,13 @@ body, html {
         position: absolute;
         right: 57.1rem;
         top: 1.6rem;
+    }
+    .hide1 > button {
+        background: white;
+        border: none;
+        font-size: 1rem;
+        COLOR: black;
+        font-weight: 900;
     }
       
        
