@@ -39,13 +39,13 @@ body, html {
 /* navigation section which contains shop bag, search bar and navigation */
 
 .nav-search-shop  img {
-    width: 5vw;
-    height: auto;
+    width: 2rem;
+    height: 2rem;
 }
 .navigation {
     display: none;
 }
-#mobile-nav:checked~nav {
+#mobile-nav:checked~nav{
     display: block;
 }
 #icons {
@@ -61,6 +61,11 @@ body, html {
 }
 #mobile-nav {
     display: none;
+}
+.mobile-navigation {
+    position: absolute;
+    top: 4rem;
+
 }
 
 
