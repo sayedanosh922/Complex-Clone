@@ -102,6 +102,9 @@ body, html {
   .discover-button, .shop-button {
     width: 100%; 
   }
+  .second-display-pages {
+    display: none;
+  }
 
 
 
@@ -147,4 +150,18 @@ body, html {
     #display-pages h2{
         font-size: 1rem;
     }
+    /* discover and shop button to be removed from 1024px */
+    .discover-shop {
+        display: none;
+    }
+    /* h1 hovered , show navigation horizontally */
+    .h2-discover:hover~nav {
+        display: block;
+    }
+    .navigation {
+       position: absolute;
+       top: 4rem;
+       right: 20rem;
+    }
+
 }
