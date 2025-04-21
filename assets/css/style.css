@@ -81,16 +81,30 @@ body, html {
 .icons-p {
     display: none;
 }
-/* discover button */
-.discover-button {
-    display: inline-block;
-    width: 15rem;
+/* disocver and shop buttons div */
+.discover-shop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
-/* shop button */
-.shop-button {
-    display: inline-block;
-    width: 10rem;
-}
+/* discover button and shop button*/
+.discover-shop {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+   /* Adds spacing between buttons */
+  }
+  /* Allows items to grow */
+  .discover-shop a {
+   flex-grow: 1; 
+  }
+ /* Buttons fill their containers */
+  .discover-button, .shop-button {
+    width: 100%; 
+  }
+
+
+
 
 
 @media (min-width: 1024px) {
