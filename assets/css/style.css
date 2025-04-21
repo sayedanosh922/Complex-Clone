@@ -11,7 +11,7 @@ body, html {
 #header-section {
     display: flex;
     flex-direction: row;
-    gap: 5rem;
+    justify-content: space-between;
     border: 2px solid blue;
 }
 /* Complex logo located in header section */
@@ -19,16 +19,14 @@ body, html {
     margin-top: 0.5rem;
     position: relative;
     border: 2px solid blue;
-    flex-basis: 3vw;
+  
+   
 }
 .logo p {
-    position: absolute;
+    position: relative;
     font-size: 0.9em;
-    bottom: 0.5rem;
+    bottom: 1.5rem;
     left: 5.8rem;
-    
-  
-  
 }
 .logo a h1, p {
     font-weight: 900;
@@ -61,4 +59,8 @@ body, html {
 
     border: 2px solid blue;
 }
+#mobile-nav {
+    display: none;
+}
+
 
