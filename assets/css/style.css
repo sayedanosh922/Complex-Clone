@@ -13,6 +13,7 @@ body, html {
     flex-direction: row;
     justify-content: space-between;
     border: 2px solid blue;
+    position: relative;
 }
 /* logo class contains h1 logo, h2 display pages,  located in header section */
 .logo {
@@ -128,7 +129,7 @@ body, html {
         margin-top: 1rem;
     }
     #icons {
-        margin-right: 3rem;
+        margin-right: 1rem;
         margin-top: 1rem;
         width: 30vw;
         gap: 2rem;
@@ -140,7 +141,7 @@ body, html {
     .icons-p {
        display: block;
        position: absolute;
-       right: 11.2rem;
+       right: 9.2rem;
     }
     /* label for checkbox */
     .nav {
@@ -155,16 +156,12 @@ body, html {
         display: none;
     }
     /* h1 hovered , show navigation horizontally */
-     .discover:hover + nav {
+     .hide1:hover ~ nav {
       display: block;
     }
     /* h2s siblins of nav elements moved for hover effect */
-    #hidden-element {
-        display: flex;
-        flex-direction: row;
-        font-size: 1rem;
-        position: relative;
-        gap: 2rem;
+    .hide {
+       
         
        
     
@@ -175,24 +172,24 @@ body, html {
     }
     .hide1 {
         position: absolute;
-        right: 66.5rem;
-        top: -0.3rem;
+        right: 69.6rem;
+        top: 1.6rem;
     }
     .hide2 {
         position: absolute;
-        right: 62.7rem;
-        top: -0.2rem;
+        right: 65.9em;
+        top: 1.6rem;
     }
     .hide3 {
         position: absolute;
-        right: 54rem;
-        top: -0.2rem;
+        right: 57.1rem;
+        top: 1.6rem;
     }
       
        
        
        
         
-    }
+    
 
 }
