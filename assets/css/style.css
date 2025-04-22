@@ -102,11 +102,9 @@ body, html {
   .discover-button, .shop-button {
     width: 100%; 
   }
-  .hide {
+#pc-nav {
     display: none;
-    
-  }
-
+}
 
 
 
@@ -155,24 +153,20 @@ body, html {
     .discover-shop {
         display: none;
     }
-    /* h1 hovered , show navigation horizontally */
-     .hide1:hover ~ nav {
-      display: block;
-    }
+
+    
     /* h2s siblins of nav elements moved for hover effect */
     .hide {
        display: block;
-        
-       
     
     }
     .hide1, .hide2, .hide3 {
         font-size: 1rem;
 
     }
-    .hide1 {
+    .h2-checkbox {
         position: absolute;
-        right: 69.6rem;
+        right: 69.8rem;
         top: 1.6rem;
     }
     .hide2 {
@@ -189,9 +183,13 @@ body, html {
         background: white;
         border: none;
         font-size: 1rem;
-        COLOR: black;
-        font-weight: 900;
+        color: black;
     }
+    
+    #pc-nav:checked ~ nav {
+        display: block;
+
+    } 
       
        
        
