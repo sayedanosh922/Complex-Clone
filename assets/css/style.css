@@ -195,14 +195,18 @@ body, html {
     }
     /* nav with class nvaigation */
     .navigation {
-        right: 20rem;
+        right: -0.2rem;
+        border: 2px solid blue;
+        width: 100%;
        
        
     }
     .navigation ul {
         list-style-type: none;
         display: flex;
-        gap: 1rem;
+        gap: 1.5rem;
+        flex-grow: 1;
+        flex-shrink: 1;
     }
 
    
