@@ -57,7 +57,7 @@ body, html {
     display: none;
 }
 /* chechbox */
-#mobile-nav:checked~nav{
+#mobile-nav:checked~.mobile-navigation{
     display: block;
 }
 /* div inside nav-search-shop containing all icons */
@@ -71,6 +71,7 @@ body, html {
     margin-right: 1em;
     margin-top: 1.2rem;
     border: 2px solid blue;
+    position: relative;
 }
 /* mobile menu icon checkbox with id mobile-nav hidden by default */
 #mobile-nav {
@@ -79,7 +80,7 @@ body, html {
 /* nav with class mobile-navigation for mobile menu */
 .mobile-navigation {
     position: absolute;
-    top: 5rem;
+    top: 6rem;
 }
 /* p element inside icon */
 .icons-p {
@@ -241,9 +242,6 @@ body, html {
         margin-left: 2rem;
     }
 
-    #shop-nav:checked ~ .shop-nav  {
-        display: block;
-    }
     #shop-nav:checked ~ .hide2 {
         text-decoration: underline;
 
@@ -279,5 +277,11 @@ body, html {
         font-weight: 900;
 
     }
+   #discover-nav:checked ~ [name=nav-group]:not(:checked),
+   #shop-nav:checked ~ [name=nav-group]:not(:checked), 
+   #pc-nav:checked ~ [name=nav-group]:not(:checked) {
+    display: none;
+   }
+   
 
 }
