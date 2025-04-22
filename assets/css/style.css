@@ -202,7 +202,7 @@ body, html {
      
     } 
 
-    }
+    
     .h2-checkbox {
         display: block;
     }
@@ -236,9 +236,9 @@ body, html {
         font-weight: 900;
         margin-left: 2rem;
     }
-    #shop-nav:checked ~ .navigation .homepage {
+    #shop-nav:checked ~ .navigation .home-page {
         display: block;
     }
 
-   
+
 }
