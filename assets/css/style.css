@@ -50,7 +50,7 @@ body, html {
     width: 1.5rem;
     height: 1.5rem;
 }
-/* navigation */
+/* navigation class on nav element*/
 .navigation {
     display: none;
 }
@@ -70,9 +70,11 @@ body, html {
     margin-top: 1.2rem;
     border: 2px solid blue;
 }
+/* mobile menu icon checkbox with id mobile-nav hidden by default */
 #mobile-nav {
     display: none;
 }
+/* nav with class mobile-navigation for mobile menu */
 .mobile-navigation {
     position: absolute;
     top: 5rem;
@@ -132,6 +134,7 @@ body, html {
         margin-left: 2rem;
         margin-top: 1rem;
     }
+    /* div containing all elements on the top section of the page*/
     #icons {
         margin-right: 1rem;
         margin-top: 1rem;
@@ -159,28 +162,26 @@ body, html {
     .discover-shop {
         display: none;
     }
-
-    
-    /* h2s siblins of nav elements moved for hover effect */
-    
-
+    /* label checkbox for discover-nav, positioned on top of h2 discover */
     .hide1 {
         position: absolute;
         right: 69.5rem;
         top: 1.6rem;
     }
+    /* label checkbox for shop-nav, positioned on top of h2 shop*/
     .hide2 {
         position: absolute;
         right: 65.9em;
         top: 1.6rem;
     }
+    /* label for shop pm h2 complexicon*/
     .hide3 {
         position: absolute;
         right: 57.2rem;
         top: 1.6rem;
     }
 
-    
+    /* discover-nav, it's lable located on h2 discover */
     #discover-nav:checked ~ nav {
         display: block;
 
@@ -192,7 +193,17 @@ body, html {
         display: block;
         font-size: 1rem;
     }
-    .hide1:checked ~ nav {
-        display: block;
+    /* nav with class nvaigation */
+    .navigation {
+        right: 20rem;
+       
+       
     }
+    .navigation ul {
+        list-style-type: none;
+        display: flex;
+        gap: 1rem;
+    }
+
+   
 }
