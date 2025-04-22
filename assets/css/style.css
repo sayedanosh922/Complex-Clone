@@ -113,7 +113,9 @@ body, html {
 .h2-checkbox {
     display: none;
 }
-
+.shop-nav {
+    display: none;
+}
 
 
 
@@ -192,7 +194,7 @@ body, html {
     }
 
     /* discover-nav, it's lable located on h2 discover */
-    #discover-nav:checked ~ nav {
+    #discover-nav:checked ~ .navigation {
         display: block;
     
     } 
@@ -236,9 +238,14 @@ body, html {
         font-weight: 900;
         margin-left: 2rem;
     }
-    #shop-nav:checked ~ .navigation .home-page {
+
+    #shop-nav:checked ~ .shop-nav  {
         display: block;
     }
-
+    .shop-nav {
+        position: absolute;
+        top: 5rem;
+        left: 20rem;
+    }
 
 }
