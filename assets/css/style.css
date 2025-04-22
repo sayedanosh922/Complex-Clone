@@ -126,6 +126,7 @@ body, html {
         display: flex;
         flex-direction: row;
         gap: 1rem;
+        aling-items:
     }
     .logo > div {
         display: flex;
@@ -155,8 +156,17 @@ body, html {
         display: none;
     }
       /* nav section that when hovered display relevant nav pages */
+    #display-pages {
+        border: 2px solid blue;
+        display: flex;
+        position: relative;
+        width: 100%;
+    }
     #display-pages h2{
+        position: relative;
         font-size: 1rem;
+        opacity: 0;
+        pointer-events: none;
     }
     /* discover and shop button to be removed from 1024px */
     .discover-shop {
@@ -165,27 +175,34 @@ body, html {
     /* label checkbox for discover-nav, positioned on top of h2 discover */
     .hide1 {
         position: absolute;
-        right: 69.5rem;
-        top: 1.6rem;
+        left: 10.4rem;
+        top: 1.78rem;
     }
     /* label checkbox for shop-nav, positioned on top of h2 shop*/
     .hide2 {
         position: absolute;
-        right: 65.9em;
-        top: 1.6rem;
+        left: 16.6rem;
+        top: 1.8rem;
     }
     /* label for shop pm h2 complexicon*/
     .hide3 {
         position: absolute;
-        right: 57.2rem;
-        top: 1.6rem;
+        left: 20.4rem;
+        top: 1.8rem;
     }
 
     /* discover-nav, it's lable located on h2 discover */
     #discover-nav:checked ~ nav {
         display: block;
-
+    
     } 
+    #discover-nav:checked ~ .hide1 {
+        text-decoration: underline;
+        text-decoration-color: black;
+     
+    } 
+
+    }
     .h2-checkbox {
         display: block;
     }
@@ -195,17 +212,16 @@ body, html {
     }
     /* nav with class nvaigation */
     .navigation {
-        right: -0.2rem;
+        right: -0.1rem;
         border: 2px solid blue;
         width: 100%;
-        height: 80%;
+        height: 70%;
         background-color: #000000;
        
     }
     .navigation ul {
         list-style-type: none;
         display: flex;
-        gap: 1.5rem;
         flex-grow: 1;
         flex-shrink: 1;
         align-items: center;
@@ -215,8 +231,13 @@ body, html {
     .navigation > ul > li  a {
         text-decoration: none;;
         color: white;
-        font-family: serif;
-        font-size: 0.8rem;
+        font-family: sans-serif;
+        font-size: 0.7rem;
+        font-weight: 900;
+        margin-left: 2rem;
+    }
+    #shop-nav:checked ~ .navigation .homepage {
+        display: block;
     }
 
    
