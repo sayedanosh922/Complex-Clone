@@ -116,8 +116,17 @@ body, html {
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
+    margin-top: 1.5rem;
+   
+   
 }
-   /* Adds spacing between buttons */
+.discover-shop button {
+    font-size: 1rem;
+    font-weight: 900;
+    font-family: sans-serif;
+    background-color: #ffffff;
+    
+}
   
   /* Allows items to grow */
   .discover-shop a {
@@ -126,8 +135,9 @@ body, html {
  /* Buttons fill their containers */
   .discover-button, .shop-button {
     width: 100%; 
-    height: 5vh;
+    height: 6vh;
   }
+  
 #discover-nav {
     display: none;
 }
@@ -147,6 +157,7 @@ main {
     background-image: url('../images/main-picture.avif');
     background-repeat: no-repeat;
     background-size: 100% auto;
+    margin-top: 2rem;
 
 }
 
