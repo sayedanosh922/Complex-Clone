@@ -168,10 +168,19 @@ main {
     flex-direction: column;
     justify-content: center;
     border: 2px solid blue;
+    gap: 10rem;
 }
 .first-text, .second-text, .watch-link, .button-link {
     border: 2px solid red;
     text-align: center;
+}
+.first-text {
+    font-family: "Montserrat Bold", sans-serif;
+    font-size: 2.3rem;
+    font-style: oblique 100deg;
+    color: yellow;
+    text-shadow: 6px 6px 8px brown;
+    margin-left: 1rem;
 }
 @media (min-width: 1024px) {
     /* logo section restyled for above 1024px */
