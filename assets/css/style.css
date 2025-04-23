@@ -8,13 +8,15 @@ body, html {
     padding: 0;
     box-sizing: border-box;
     width: 100%;
+  
+    right: 
 }
 /* display flex for header to align both sections */
 #header-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 2px solid blue;
+    border: 2px solid purple;
     position: relative;
 }
 /* logo class contains h1 logo, h2 display pages,  located in header section */
@@ -47,7 +49,9 @@ body, html {
     text-decoration: none;
 }
 /* nav-search-shop section contains navigation and all other icons located at the top */
-
+.nav-search-shop {
+    border: 2px solid green;
+}
 .nav-search-shop  img {
     width: 1.5rem;
     height: 1.5rem;
@@ -71,7 +75,7 @@ body, html {
     margin-right: 1em;
     margin-top: 1.2rem;
     border: 2px solid blue;
-    position: relative;
+    
 }
 /* mobile menu icon checkbox with id mobile-nav hidden by default */
 #mobile-nav {
@@ -126,7 +130,6 @@ body, html {
     /* logo section restyled for above 1024px */
     .logo {
         margin-top: 0.5rem;
-        position: relative;
         border: 2px solid blue;
         display: flex;
         flex-direction: row;
@@ -165,12 +168,12 @@ body, html {
         border: 2px solid blue;
         display: flex;
         position: relative;
-        width: 100%;
+       
     }
     #display-pages h2{
         position: relative;
         font-size: 1rem;
-        opacity: 0;
+        
         pointer-events: none;
     }
     /* discover and shop button to be removed from 1024px */
@@ -178,24 +181,22 @@ body, html {
         display: none;
     }
     /* label checkbox for discover-nav, positioned on top of h2 discover */
+    .h2-checkbox {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 1.7rem;
+    }
     .hide1 {
-        position: absolute;
-        left: 10.4rem;
-        top: 1.78rem;
+        left: 9.3rem;
     }
-    /* label checkbox for shop-nav, positioned on top of h2 shop*/
     .hide2 {
-        position: absolute;
-        left: 16.6rem;
-        top: 1.8rem;
+        left: 15.6rem;
     }
-    /* label for shop pm h2 complexicon*/
     .hide3 {
-        position: absolute;
-        left: 20.4rem;
-        top: 1.8rem;
+        left: 19.3rem;
     }
-
+   
     /* discover-nav, it's lable located on h2 discover */
     #discover-nav:checked ~ .navigation {
         display: block;
@@ -207,22 +208,23 @@ body, html {
      
     } 
 
-    
-    .h2-checkbox {
-        display: block;
-    }
+
     .h2-checkbox > h2 {
         display: block;
         font-size: 1rem;
     }
     /* nav with class nvaigation */
     .navigation {
+        position: absolute;
         border: 2px solid blue;
-        width: 100%;
-        height: 70%;
+        width: 100vw;;
+        height: 3.5rem;
+        right: -0.9;
         background-color: #000000;
-        box-sizing: border-box;
-        left: 0.5px;
+ 
+   
+       
+       
     }
     .navigation ul {
         list-style-type: none;
@@ -264,7 +266,7 @@ body, html {
         width: 100%;
         height: 100%;
         align-items: center;
-        gap:
+       
     
 
     }
@@ -277,11 +279,7 @@ body, html {
         font-weight: 900;
 
     }
-   #discover-nav:checked ~ [name=nav-group]:not(:checked),
-   #shop-nav:checked ~ [name=nav-group]:not(:checked), 
-   #pc-nav:checked ~ [name=nav-group]:not(:checked) {
-    display: none;
-   }
+ 
    
 
 }
