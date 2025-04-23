@@ -219,7 +219,8 @@ body, html {
         border: 2px solid blue;
         width: 100vw;;
         height: 3.5rem;
-        right: -0.9;
+        left: 0;
+        top: 5rem;
         background-color: #000000;
  
    
@@ -242,6 +243,9 @@ body, html {
         font-size: 0.7rem;
         font-weight: 900;
         margin-left: 2rem;
+    }
+    #shop-nav:checked ~ .shop-nav {
+        display: block;
     }
 
     #shop-nav:checked ~ .hide2 {
