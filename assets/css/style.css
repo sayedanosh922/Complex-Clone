@@ -156,40 +156,53 @@ body, html {
 }
 
 main {
-    width: 100vw;
-    height: 100vh;
-    border: 2px solid blue;
-    background-image: url('../images/main-picture.avif');
-    background-repeat: no-repeat;
-    background-size: 100% auto;
     margin-top: 7rem;
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: repeat(10, minmax(100vh, 1fr));
+    grid-template-rows: 
+    minmax(100vh, 1fr) 
+    minmax(100vh, 1fr)
+    minmax(100vw, 1fr)
+    minmax(100vh, 1fr)
+    minmax(100vh, 1fr);
+
+
 }
  
 .child {
     border: 2px solid blue;
 }
 #first-row {
+    background-image: url('../images/main-picture.avif');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 .first-p {
-    font-size: 2rem;
+    font-size: 3vw;
     color: yellow;
-    margin-top: 11rem;
     margin-left: 2rem;
     text-align: center;
-    opacity: 0;
+   
 }
 .second-p {
     font-size: 5.4rem;
     color: yellow;
     text-align: center;
-    opacity: 0;
+    margin-bottom: 4rem;
+   
+}
+.third-item {
+    border: 2px solid red;
+    background: rgb(65, 54, 54);
+    color: white;
+    font-family: san-serif;
+    font-weight: 5900;
+    text-transform: capitalize;
 }
 
 
