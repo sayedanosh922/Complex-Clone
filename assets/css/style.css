@@ -116,7 +116,8 @@ body, html {
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
-    margin-top: 1.rem;
+    position: absolute;
+    top: 5rem;
    
    
 }
@@ -161,7 +162,7 @@ main {
     background-image: url('../images/main-picture.avif');
     background-repeat: no-repeat;
     background-size: 100% auto;
-    margin-top: 4.5rem;
+    margin-top: 7rem;
     display: grid;
     grid-template-columns: 100vw;
     grid-template-rows: repeat(10, minmax(100vh, 1fr));
@@ -169,6 +170,15 @@ main {
  
 .child {
     border: 2px solid blue;
+}
+#first-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.first-p {
+    font-size: 2rem;
 }
 
 
