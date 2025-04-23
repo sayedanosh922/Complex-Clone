@@ -116,16 +116,19 @@ body, html {
     flex-direction: row;
     flex-wrap: nowrap;
     width: 100%;
-    margin-top: 1.5rem;
+    margin-top: 1.rem;
    
    
 }
 .discover-shop button {
-    font-size: 1rem;
-    font-weight: 900;
+    font-size: 1.1rem;
+    font-weight: 800;
     font-family: sans-serif;
     background-color: #ffffff;
     
+}
+#login {
+    display: none;
 }
   
   /* Allows items to grow */
@@ -157,7 +160,7 @@ main {
     background-image: url('../images/main-picture.avif');
     background-repeat: no-repeat;
     background-size: 100% auto;
-    margin-top: 2rem;
+    margin-top: 4.5rem;
 
 }
 
