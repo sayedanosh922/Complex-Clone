@@ -180,6 +180,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 2px solid rgb(168, 39, 7);
+    position: relative;
 
 }
 .first-p {
@@ -198,12 +200,27 @@ main {
 }
 .third-item {
     border: 2px solid red;
-    background: rgb(65, 54, 54);
+    background: rgb(150, 131, 131);
+    text-transform: capitalize;
+    width: 27rem;
+    height: 2.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.third-item p {
     color: white;
     font-family: san-serif;
-    font-weight: 5900;
-    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 3vw;
 }
+.third-class-a {
+    margin-left: 0;
+    position: relative;
+    right: 14rem;
+    top: 5rem;
+}
+
 
 
 @media (min-width: 1024px) {
