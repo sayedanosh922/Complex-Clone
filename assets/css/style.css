@@ -155,7 +155,7 @@ body, html {
 }
 main {
     width: 100vw;
-    height: 70vh;
+    height: 100vh;
     border: 2px solid blue;
     background-image: url('../images/main-picture.avif');
     background-repeat: no-repeat;
@@ -163,9 +163,16 @@ main {
     margin-top: 4.5rem;
 
 }
-
-
-
+#background-image-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid blue;
+}
+.first-text, .second-text, .watch-link, .button-link {
+    border: 2px solid red;
+    text-align: center;
+}
 @media (min-width: 1024px) {
     /* logo section restyled for above 1024px */
     .logo {
